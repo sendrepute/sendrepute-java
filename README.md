@@ -20,7 +20,7 @@ mvn verify
 mvn install
 ```
 
-The supported and tested baseline is Java 17 with Spring Framework 6.2.15. No
+The supported and tested baseline is Java 17 with Spring Framework 6.2.19. No
 Spring Boot 4 compatibility claim is made. The consuming application must
 provide a configured `JavaMailSender`; `angus-mail` is a runtime dependency.
 
@@ -116,8 +116,8 @@ java scripts/PackageSource.java
 ```
 
 The recorded verification environment was GraalVM CE JDK 19.0.2 compiling with
-`javac --release 17`, Maven 3.8.6, Spring Framework 6.2.15, Jakarta Mail API
-2.1.3 / Angus Mail 2.0.4, Jackson 2.18.6, and jsoup 1.21.2. This validates the
+`javac --release 17`, Maven 3.8.6, Spring Framework 6.2.19, Jakarta Mail API
+2.1.3 / Angus Mail 2.0.4, Jackson 2.18.11, and jsoup 1.23.2. This validates the
 Java 17 bytecode/API floor against actual dependencies; it is not a broad
 certification of untested framework versions.
 

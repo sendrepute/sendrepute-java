@@ -2,7 +2,7 @@
   "name": "sendrepute-spring-mail",
   "version": "0.1.1",
   "java": "17+",
-  "springFramework": "6.2.15",
+  "springFramework": "6.2.19",
   "entryPoint": "com.sendrepute.mail.SendReputeJavaMailSender",
   "endpoint": "https://www.sendrepute.com/api/v1/classify",
   "published": false,

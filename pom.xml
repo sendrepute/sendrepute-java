@@ -15,9 +15,9 @@
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>6.2.15</spring.version>
-    <jackson.version>2.18.6</jackson.version>
-    <jsoup.version>1.21.2</jsoup.version>
+    <spring.version>6.2.19</spring.version>
+    <jackson.version>2.18.11</jackson.version>
+    <jsoup.version>1.23.2</jsoup.version>
     <junit.version>5.12.2</junit.version>
   </properties>
   <dependencies>

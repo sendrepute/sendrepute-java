@@ -1,8 +1,22 @@
-> **Standalone source distribution:** this repository contains the integration runtime, documentation, and source packager. Upstream workspace/CMS/production-normalizer regression suites are deliberately not distributed here because they depend on private server code or isolated platform fixtures. Testing commands and historical verification evidence below describe upstream maintainer validation, not a self-contained test suite in this source-only checkout. No third-party registry publication is implied.
-
 # SendRepute Spring JavaMail adapter
 
-Version 0.1.1 is a small Java 17 / Spring Framework 6 library that decorates a
+## Customer services
+
+`CustomerServiceClient` exposes all 49 customer API operations independently of
+the mail-send decorator. Its fixed destination cannot be replaced with an
+arbitrary URL.
+
+```java
+var services = new CustomerServiceClient(apiToken, Duration.ofSeconds(180));
+var account = services.request("customerGetAccount", null, Map.of(), Map.of(), false);
+```
+
+The remaining arguments are a JSON body, path parameters, query parameters and
+per-request mutation authorization. Obtain and review server quotes and submit
+expected-price fields before authorizing paid operations. No operation retries
+automatically; preserve recovery/result IDs if the response is interrupted.
+
+Version 0.1.2 is a Java 17 / Spring Framework 6 library that decorates a
 `JavaMailSender`. It has no auto-configuration and never captures ordinary mail.
 Only an explicit `sendWithSendRepute(...)` call can make the paid pre-send
 request. Classification is an advisory content signal, not an inbox-placement

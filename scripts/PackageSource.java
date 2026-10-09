@@ -9,7 +9,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public final class PackageSource {
-    private static final String PREFIX = "sendrepute-spring-mail-0.1.1/";
+    private static final String PREFIX = "sendrepute-spring-mail-0.1.2/";
     private static final FileTime EPOCH = FileTime.fromMillis(0);
     private static final List<String> FILES = List.of(
             "LICENSE", "README.md", "SECURITY.md", "pom.xml", "sendrepute-manifest.json",
@@ -29,7 +29,7 @@ public final class PackageSource {
 
     public static void main(String[] args) throws Exception {
         Path root = Files.exists(Path.of("pom.xml")) ? Path.of(".") : Path.of("integrations/java");
-        Path output = root.resolve("dist/sendrepute-spring-mail-0.1.1-source.zip");
+        Path output = root.resolve("dist/sendrepute-spring-mail-0.1.2-source.zip");
         Files.createDirectories(output.getParent());
         Path temporary = output.resolveSibling(output.getFileName() + ".tmp");
         try (ZipOutputStream zip = new ZipOutputStream(Files.newOutputStream(temporary))) {

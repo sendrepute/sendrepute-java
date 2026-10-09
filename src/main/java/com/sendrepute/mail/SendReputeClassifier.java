@@ -250,7 +250,7 @@ final class SendReputeClassifier implements Classifier {
 
     private record Request(String sender, String subject, String body) {}
 
-    private static final class BoundedBodySubscriber implements HttpResponse.BodySubscriber<byte[]> {
+    static final class BoundedBodySubscriber implements HttpResponse.BodySubscriber<byte[]> {
         private final CompletableFuture<byte[]> body = new CompletableFuture<>();
         private final ByteArrayOutputStream output = new ByteArrayOutputStream();
         private Flow.Subscription subscription;

@@ -1,6 +1,6 @@
 {
   "name": "sendrepute-spring-mail",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "java": "17+",
   "springFramework": "6.2.19",
   "entryPoint": "com.sendrepute.mail.SendReputeJavaMailSender",

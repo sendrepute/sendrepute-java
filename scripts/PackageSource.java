@@ -20,6 +20,8 @@ public final class PackageSource {
             "src/main/java/com/sendrepute/mail/MimeEmailExtractor.java",
             "src/main/java/com/sendrepute/mail/SendReputeBlockedException.java",
             "src/main/java/com/sendrepute/mail/SendReputeClassifier.java",
+            "src/main/java/com/sendrepute/mail/CustomerServices.java",
+            "src/main/java/com/sendrepute/mail/CustomerServiceClient.java",
             "src/main/java/com/sendrepute/mail/SendReputeConfiguration.java",
             "src/main/java/com/sendrepute/mail/SendReputeException.java",
             "src/main/java/com/sendrepute/mail/SendReputeJavaMailSender.java");
